@@ -1,0 +1,193 @@
+main#todoBody{
+    padding: 2rem;
+    background-color: var(--secondary-bg);
+}
+
+#todoBody > :is(h1, h2, h3, h4, h5, h6){
+    text-align: center;
+
+    margin: 0 0 1rem 0;
+}
+
+#todoBody > section + section{
+    margin-top: 2rem;
+}
+
+#todoBody .container{
+    padding: 0 1rem;
+}
+
+.forms{
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.todoBlock form{
+    width: 100%;
+    width: 100%;
+}
+
+.todoBlock:last-of-type{
+    margin-bottom: 0;
+}
+
+form{
+    padding: 1rem;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+    /*border-radius: 10px;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /*flex-direction: column;*/
+}
+
+form > * {
+    margin-right: 1rem;
+}
+
+form > *:last-of-type{
+    margin-right: 0;
+}
+
+input{
+    width: 100%;
+    padding: .75rem 1.25rem;
+
+    background: var(--light-bg);
+    border: 1px solid var(--secondary-bg);
+    outline: none;
+}
+
+input{
+    min-width: 25vw;
+}
+
+/*input[type='submit']{*/
+/**/
+/*}*/
+
+/* Controller Buttons */
+
+.controllerBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.controllerBtns > *{
+    flex-basis: calc(100% / 2 - 1rem);
+}
+
+.controllerBtns button{
+    /*padding-left: 2.5rem;*/
+    /*padding-right: 2.5rem;*/
+}
+
+/* ToDo List */
+
+#todoList{
+    padding: 2rem 0;
+}
+
+.unfinishedList{
+
+}
+
+.categoryList{
+    max-height: 40vh;
+
+    padding: .5rem 1rem;
+
+    overflow: hidden auto;
+}
+
+.categoryList ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.categoryList li{
+    padding: 1rem 1.25rem;
+
+    background-color: var(--light-bg);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.listContent{
+    width: calc(70% - 1rem);
+    max-width: 30vw;
+
+    cursor: pointer;
+
+    overflow-wrap: break-word;
+}
+
+.listBtns{
+    width: calc(30% - 1rem);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.listBtns > *{
+    padding: .75rem;
+    border: 1px solid var(--main-bg);
+    cursor: pointer;
+}
+
+.deleteIcon{
+    background-color: var(--delete-icon);
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+
+.updateIcon{
+    background-color: var(--update-icon);
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+
+.importantIcon{
+    background-color: var(--important-icon);
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+
+.categoryList .important{
+    background-color: var(--important-color);
+}
+
+.important .listContent{
+    font-weight: 900;
+}
+
+.completed .listContent{
+    text-decoration: line-through;
+    opacity: .6;
+}
+

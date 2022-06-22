@@ -1,0 +1,16 @@
+:root{
+    --main-bg: #333;
+    --secondary-bg: #acacac;
+    --light-bg: #fafafa;
+    --light-secondary-bg: #efefef;
+    --light-third-bg: #bdbdbd;
+
+    --important-color: #42ffbf;
+    --important-icon: #90EE90FF;
+    --done-color: #ffb59a;
+    --delete-icon: #FF7F50FF;
+    --update-icon: #fff529;
+
+    --main-color: #f4f4f4;
+    --secondary-color: #008080FF;
+}
